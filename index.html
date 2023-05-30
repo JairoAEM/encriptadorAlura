@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Encriptador</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/styleInicio1.css">
+    <script type="application/javascript" src="js/encriptador.js"></script>
 </head>
+
+
 <body>
-hola
+
+<header>
+
+    <img class="logoA" src="imagenes/logoA.png" alt="Imagen del Logo A.">
+</header>
+
+<main>
+    <div class="contenedorGeneral">
+        <div class="contenedorIzq">
+            <div>
+
+              <textarea id="mensajeEncriptar" class="cajaEncriptar" cols="60" rows="10" name="textoEcriptar"
+                        placeholder="Ingrese el texto aqui"></textarea>
+
+            </div>
+
+            <div>
+
+                <p class="alertaTexto">&#9888; Solo letras minúsculas y sin acentos</p>
+
+                <div class="botonesAlineados">
+                    <button class="botonEncriptar" onclick="encriptar()">Encriptar</button>
+                    <button class="botonDesencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+                <!--        <input  class="botonEncriptar" type="submit" value="Encriptar">-->
+
+                <!--        <input class="botonDesencriptar" type="submit" value="Desencriptar">-->
+
+            </div>
+        </div>
+
+        <div>
+            <div class="cuadroEncriptador" id="cuadroEncriptador">
+
+                <img class="muñeco" src="../imagenes/Muñeco.png" alt="Muñeco con lupa">
+                <p>Ningún mensaje fue encontrado</p>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+
+            </div>
+            <div class="cuadroEncriptador" id="Encriptado">
+                <p id="textoEncriptado"></p>
+                <input class="botonCopiar" onclick="copiarT()" type="submit" value="Copiar">
+            </div>
+        </div>
+    </div>
+
+</main>
 
 </body>
 </html>
